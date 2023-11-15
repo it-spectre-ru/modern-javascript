@@ -1,6 +1,9 @@
-// alert('Hi')
+let age = 25;
+let year = 2023
 
 
-console.log(1)
-console.log(2)
+console.log(age, year)
 
+
+age = 30
+console.log(age)
