@@ -1,12 +1,5 @@
-function greet () {
-  console.log('Hello')
+const speak = function(name='default', time='night') {
+  console.log(`GOOD DAY ${name} , ${time}`)
 }
 
-greet()
-
-
-const speak = function(){
-  console.log('greee');
-};
-
-speak()
+speak('ooo', 'morning')
