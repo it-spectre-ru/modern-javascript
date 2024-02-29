@@ -1,5 +1,8 @@
-const speak = function(name='default', time='night') {
-  console.log(`GOOD DAY ${name} , ${time}`)
+
+const calcArea = function(radius){
+  return 3.14 * radius**2;
 }
 
-speak('ooo', 'morning')
+const area = calcArea(5)
+
+console.log(area)
