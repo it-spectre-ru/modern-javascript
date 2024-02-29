@@ -1,11 +1,14 @@
-const name2 = 'mario'
+const myFunc = (callbackFunc) => {
+  let value = 50
+  callbackFunc(value)
+}
 
-const greet = () => 'hello'
+myFunc(value => console.log(value))
 
-let resulOne = greet()
-console.log(resulOne)
+let namePeople = ['mario', 'luigi', 'roo', 'strengh', 'vol']
 
+const logPerson = (person, index) => {
+  console.log(`${index} - hello ${person}`)
+}
 
-// method
-let resultTwo = name2.toUpperCase()
-console.log(resultTwo)
+namePeople.forEach(logPerson)
