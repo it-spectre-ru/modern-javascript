@@ -1,14 +1,11 @@
-// regular function
-// const calcArea = function(radius){
-//   return 3.14 * radius**2;
-// }
+const name2 = 'mario'
 
-// arrow function
-const calcArea = radius => 3.14 * radius**2
+const greet = () => 'hello'
 
+let resulOne = greet()
+console.log(resulOne)
 
 
-
-const area = calcArea(5)
-
-console.log('area is: ' + area)
+// method
+let resultTwo = name2.toUpperCase()
+console.log(resultTwo)
