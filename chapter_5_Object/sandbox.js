@@ -13,6 +13,12 @@ let user = {
     console.log('the user logged out');
   },
   logBlogs(){
+    // access the blogs here
+    // console.log(this);
+    console.log('this user has written these blogs:');
+    this.blogs.forEach(blog => {
+      console.log(blog);
+    })
   }
 };
 
