@@ -1,22 +1,20 @@
+// object literals
 
 let user = {
-  name: 'Mike',  age: 33,
-  email: 'free@user.com',
-  location: 'Town',
-  blog: ['Chapter1', '222222']
-}
+  name: 'crystal',
+  age: 30,
+  email: 'crystal@thenetninja.co.uk',
+  location: 'berlin',
+  blogs: ['why mac & cheese rules', '10 things to make with marmite'],
+  login(){
+    console.log('the user logged in');
+  },
+  logout(){
+    console.log('the user logged out');
+  },
+  logBlogs(){
+  }
+};
 
-console.log(user)
-console.log(user.name)
-
-// user.age = 11
-
-console.log(user.age)
-
-
-console.log(user['name'])
-
-console.log(typeof user)
-
-
-
+// console.log(this);
+user.logBlogs();
