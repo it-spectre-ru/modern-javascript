@@ -1,22 +1,11 @@
-const para = document.querySelector('p')
+const link = document.querySelector('a')
 
-// console.log(para.innerText)
-// para.innerText = 'ninjas are awesome!'
+console.log(link.getAttribute('href'))
+link.setAttribute('href', 'https://www')
+link.innerText = 'The Ninja'
 
-const paras = document.querySelectorAll('p');
 
-// paras.forEach(para => {
-//   console.log(para.innerText)
-//   para.innerText += ' new text'
-// })
+const mssg = document.querySelector('p')
 
-const content = document.querySelector('.content')
-
-// console.log(content.innerHTML)
-// content.innerHTML += '<H2> This is a new H2</H2>'
-
-const people = ['mario', 'luigi', 'yoshi']
-
-people.forEach(person => {
-  content.innerHTML += `<p>${person}</p>`
-})
+console.log(mssg.getAttribute('class'))
+mssg.setAttribute('class', 'success')
