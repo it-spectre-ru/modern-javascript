@@ -1,31 +1,20 @@
-const para = document.querySelector('p');
-const sel = document.querySelector('.error');
-const div = document.querySelector('div.error');
-const bod = document.querySelector('body > h1');
+// get an element by id
 
-console.log(bod)
+const title = document.getElementById("page-title")
+console.log(title)
 
 
-console.log('---------------------')
-console.log('---------------------')
-console.log('---------------------')
+// get elements by their  class name
 
+const errors = document.getElementsByClassName('error')
+console.log(errors)
+console.log(errors[0])
+// errors.forEach(error => {
+//   console.log(error)  
+// });
 
+// get element by their tag name
 
-const paras = document.querySelectorAll('p')
-
+const paras = document.getElementsByTagName('p')
 console.log(paras)
 console.log(paras[0])
-
-console.log('---------------------')
-console.log('---------------------')
-console.log('---------------------')
-
-paras.forEach(para => {
-  console.log(para)
-})
-
-
-const errors = document.querySelectorAll('.error')
-
-console.log(errors)
