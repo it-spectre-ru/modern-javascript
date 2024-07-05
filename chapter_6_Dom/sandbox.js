@@ -1,15 +1,19 @@
-// const content = document.querySelector('p');
+const article = document.querySelector('article');
 
-// console.log(content.classList);
-// content.classList.add('error');
-// content.classList.remove('success');
+// console.log(article.children);
+// console.log(Array.from(article.children));
+// console.log(article.children);
 
-const paras = document.querySelectorAll('p');
-
-paras.forEach(p => {
-  if(p.textContent.includes('error')){
-    p.classList.add('error');
-  } else if(p.textContent.includes('success')) {
-    p.classList.add('success');
-  }
+Array.from(article.children).forEach(child => {
+  child.classList.add('article-element');
 });
+
+const title = document.querySelector('h2');
+
+console.log(title.parentElement);
+console.log(title.parentElement.parentElement);
+console.log(title.nextElementSibling);
+console.log(title.previousElementSibling);
+
+// chaining
+console.log(title.nextElementSibling.parentElement.children);
